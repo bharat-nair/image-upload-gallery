@@ -9,7 +9,7 @@ app.set('view-engine','ejs');
 app.use(express.static("./uploads"));
 
 const upload = multer({
-    dest: "C:\\Users\\iiitmk\\Desktop\\test\\galleryApp\\uploads",
+    dest: "",
 })
 
 app.get("/",function(request,response){
