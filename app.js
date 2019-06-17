@@ -14,7 +14,7 @@ const upload = multer({
 
 app.get("/",function(request,response){
     
-    fs.readdir("C:\\Users\\iiitmk\\Desktop\\test\\galleryApp\\uploads",function(error,files){
+    fs.readdir("upload-dir-here",function(error,files){
         
         response.render('gallery.ejs',{
             images:files,
